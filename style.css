@@ -1,0 +1,81 @@
+* {
+  background-color:rgb(8, 5, 24);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start; /* Align items at the top */
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.box1 {
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 100%;
+  border: 10px solid #195694;
+  padding: 20px;
+  margin: 20px auto; /* Center horizontally */
+  width: 100%; /* Default to full width */
+  max-width: 600px; /* Set a max-width to control the size */
+  align-self: flex-start; /* Align at the top */
+}
+
+.box1 h1 {
+  background-color: #f1f1f1;
+}
+
+.box1 p {
+  background-color: #f1f1f1;
+}
+
+.box1 a {
+  background-color: #f1f1f1;
+}
+
+.box1 a img {
+  background-color: #f1f1f1; /* Set background color to white */
+  padding: 5px; /* Optional: Add some padding to make the background color visible */
+}
+
+.image {
+  text-align: center; /* Center the image on smaller devices */
+}
+
+.image img {
+  border-radius: 0%;
+  position: relative;
+  width: 100%; /* Default to full width */
+  height: auto;
+  border-radius: 1000px;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Media query for tablets */
+@media (min-width: 600px) {
+  .box1 {
+    width: 75%; /* Adjust width for tablets */
+    font-size: 200%;
+  }
+  .image img {
+    width: 50%; /* Adjust width for tablets */
+  }
+}
+
+/* Media query for desktops */
+@media (min-width: 1024px) {
+  .box1 {
+    width: 50%; /* Adjust width for desktops */
+    font-size: 120%;
+  }
+  .image img {
+    width: 25%; /* Adjust width for desktops */
+  }
+}
